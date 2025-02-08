@@ -20,16 +20,13 @@ WITH top_paying_jobs AS (
         AND job_work_from_home = TRUE 
         AND job_title_short = 'Data Analyst'
     ORDER BY salary_year_avg DESC
-    LIMIT 10
+    LIMIT 20
 )
-SELECT
-skills as skill_name,
-COUNT(skjob.job_id) as skill_count
+SELECT *, skim.skills
 FROM top_paying_jobs toppay
 INNER JOIN skills_job_dim as skjob on toppay.job_id=skjob.job_id
 INNER JOIN skills_dim as skim on skjob.skill_id = skim.skill_id
-GROUP BY skill_name
-ORDER BY skill_count DESC
+
 /*
 Query for counting the occurrences of each skill 
 SELECT
