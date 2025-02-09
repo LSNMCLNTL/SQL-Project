@@ -18,9 +18,3 @@ SELECT
     ORDER BY skcount DESC
     LIMIT 10;
 
-SELECT 
-jp.job_country,
-COUNT(jp.job_country)
-FROM job_postings_fact jp
-GROUP BY jp.job_country
-ORDER BY COUNT(jp.job_country) DESC
