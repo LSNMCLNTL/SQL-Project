@@ -1,5 +1,5 @@
 /*
-Which companies offer the highest-paying remote Data Analyst jobs?
+Which companies offer the highest-paying Data Analyst jobs?
 This query helps identify companies that pay the most for remote Data Analyst roles.
 */
 SELECT
@@ -18,7 +18,6 @@ LEFT JOIN(
 ) get_company_name on jp.company_id = get_company_name.company_id
 WHERE 
     salary_year_avg IS NOT NULL 
-    AND job_work_from_home = TRUE 
     AND job_title_short = 'Data Analyst'
 ORDER BY salary_year_avg DESC
 LIMIT 20

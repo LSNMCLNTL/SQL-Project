@@ -9,7 +9,6 @@ INNER JOIN skills_dim AS skim ON skjob.skill_id = skim.skill_id
 WHERE 
     jp.job_title LIKE '%Data Analyst%'
     AND salary_year_avg IS NOT NULL 
-    AND job_work_from_home = TRUE
 GROUP BY 
     skim.skill_id 
 HAVING 
