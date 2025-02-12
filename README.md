@@ -20,12 +20,12 @@ This project contains **five SQL queries** that analyze **Data Analyst job trend
 - Finds the most frequently required skills for remote Data Analyst jobs.  
 - Ranks the top 20 skills based on demand and average salary.  
 - skills_value_analysis.sql
-- 
+  
 **Insights:**
 - Snowflake, Jira, and Spark are the most in-demand technologies for Data Analyst jobs.  
 - Cloud and big data tools (Hadoop, Airflow, PySpark) are highly sought after.  
 - Data visualization libraries like **Plotly, Matplotlib, and Seaborn** are frequently mentioned.
-- 
+
 ### 3️. Companies Offering the Highest-Paying Remote Data Analyst Jobs  
 - Lists the top 20 companies that offer the highest salaries for remote Data Analyst positions.  
 - Includes company names, job locations, salary, and posting dates.
